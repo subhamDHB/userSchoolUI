@@ -1,0 +1,193 @@
+/* Slider css start */
+.banner .carousel-item {
+  height: 700px;
+}
+.banner .carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 720px;
+}
+.banner .carousel-control-next,
+.carousel-control-prev {
+  position: absolute !important;
+  bottom: 100px !important;
+  top: 82% !important;
+  z-index: 1 !important;
+  width: 50px !important;
+  height: 50px;
+  padding: 0 !important;
+  color: #fff !important;
+  text-align: center !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  transition: opacity 0.15s ease !important;
+}
+.banner .carousel-control-next:hover,
+.banner .carousel-control-prev:hover {
+  background-color: #ffb400 !important;
+}
+.banner .carousel-control-prev {
+  left: 90% !important;
+}
+.banner .carousel-control-next {
+  right: 4% !important;
+}
+.banner .carousel-item:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.banner .carousel-item:after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 120px);
+  height: calc(100% - 120px);
+  left: 60px;
+  top: 60px;
+  z-index: 0;
+}
+.banner .carousel-caption {
+  z-index: 1;
+}
+.banner .carousel-caption h2 {
+  font-size: 75px;
+  text-transform: capitalize;
+  line-height: 90px;
+  font-weight: 700;
+}
+.banner .carousel-caption h6 {
+  text-transform: capitalize;
+  margin: 30px 0px;
+  font-size: 21px;
+  line-height: 32px;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+.slider-btn button {
+  padding: 19px 32px;
+  background-color: #6c5ebf;
+  border: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0px;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+.slider-btn button svg {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.slider-btn button:before {
+  background-color: #ffb400;
+  transition-duration: 800ms;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.slider-btn button:hover:before {
+  top: -40%;
+}
+.slider-btn button:hover {
+  color: #fff !important;
+}
+.banner .carousel-caption {
+  bottom: 11.25rem;
+}
+.banner .carousel-item img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.two {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.three {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* Slider css end */
