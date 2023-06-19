@@ -4,7 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Head from "next/head";
+import "./Home.css";
 import Script from "next/script";
+import Header from "@/Components/Header/Header";
+import Footer from "@/Components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -29,7 +32,9 @@ export default function RootLayout({ children }) {
         ></link>
       </Head>
       <body className={inter.className}>
+        <Header />
         {children}
+        <Footer />
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></Script>
         <Script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></Script>

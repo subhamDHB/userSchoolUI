@@ -1,11 +1,13 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import HeaderCss from "./../Header/Header.css";
 import { BsFacebook, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { MdLocationPin, MdLocalPhone } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
-
+import { usePathname } from "next/navigation";
 const Header = () => {
+  const path = usePathname();
   return (
     <>
       <div className="site-mobile-menu site-navbar-target">
@@ -84,13 +86,13 @@ const Header = () => {
                       </Link>
                     </div>
                     <ul className="site-menu main-menu js-clone-nav d-none d-lg-block">
-                      <li className="active">
+                      <li className={path == "/" ? "active" : ""}>
                         <Link href="/" className="nav-link">
                           Home
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/about-us" className="nav-link">
+                      <li className={path == "/about" ? "active" : ""}>
+                        <Link href="/about" className="nav-link">
                           About Us
                         </Link>
                       </li>
@@ -131,8 +133,8 @@ const Header = () => {
                           Admission
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/contact-us" className="nav-link">
+                      <li className={path == "/contact" ? "active" : ""}>
+                        <Link href="/contact" className="nav-link">
                           Contact Us
                         </Link>
                       </li>

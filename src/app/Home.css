@@ -1,3 +1,4 @@
+/* about sec css start */
 .about-section {
   padding: 125px 0px 80px;
 }
@@ -52,6 +53,10 @@
   left: 0;
   border: dotted;
   color: #6c5ebf;
+}
+.sec-title.text-center .sub-title:before {
+  left: 50%;
+  transform: translateX(-50%);
 }
 .sec-title h2 {
   position: relative;
@@ -113,7 +118,105 @@
   background-color: #ffb400;
   color: #000;
 }
+/* about sec css end */
+
+/* quote sec css start */
+.quote-sec {
+  padding: 80px 0px 80px;
+  /* background-color: #000; */
+  background-image: url("http://html.tonatheme.com/2021/drivega/assets/images/background/bg-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fancy-quote h2 {
+  margin-top: 0;
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 35px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+.fancy-quote span {
+  color: white;
+}
+.fancy-quote p {
+  line-height: 1.25em;
+}
+.fancy-quote cite {
+  font-style: inherit;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+.fancy-quote blockquote {
+  width: 100%;
+  padding: 40px 50px;
+  position: relative;
+  background: #3c3b6e;
+  margin-bottom: 28px;
+  color: #eee;
+}
+
+/* .fancy-quote blockquote::before,
+.fancy-quote blockquote::after {
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  content: "";
+  position: absolute;
+  background: #3c3b6e;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.25);
+}
+.fancy-quote blockquote::before {
+  right: 100%;
+}
+.fancy-quote blockquote::after {
+  left: 100%;
+} */
+.fancy-quote blockquote p {
+  margin: 0px;
+  padding-bottom: 20px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.fancy-quote blockquote p::before {
+  top: 0;
+  left: 16px;
+  color: #ffb400;
+  content: "“";
+  font-size: 4em;
+  position: absolute;
+  text-shadow: -3px 0 #f7f7f7;
+  font-weight: bold;
+  font-family: "Times New Roman", "serif";
+
+  opacity: 0.75;
+}
+.fancy-quote blockquote p::after {
+  right: 16px;
+  color: #ffb400;
+  content: "”";
+  bottom: -24px;
+  font-size: 4em;
+  position: absolute;
+  text-shadow: 3px 0 #c2c2c2;
+  font-weight: bold;
+  font-family: "Times New Roman", "serif";
+
+  opacity: 0.75;
+}
+.fancy-quote blockquote cite {
+  font-size: 18px;
+  font-style: italic !important;
+  letter-spacing: 2px;
+}
+
+/* Quote sec css end */
 /* gallery sec css start */
+.gallery-sec {
+  padding: 120px 0px 80px;
+  background-color: #6c5ebf1c;
+}
 .gallery-main {
   position: relative;
   margin-bottom: 30px;
@@ -121,6 +224,7 @@
 .gallery-img {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 15px -2px #0000009e;
 }
 .gallery-img:before {
   position: absolute;
@@ -141,6 +245,7 @@
   width: 100%;
   object-fit: cover;
   cursor: pointer;
+  height: 250px;
   transition: 0.7s;
 }
 .gallery-main:hover .gallery-img img {
@@ -152,8 +257,8 @@
 }
 
 #light-box-img {
-  /* height: 400px;
-    max-width: 400px; */
+  height: 600px;
+  max-width: 600px;
   object-fit: cover;
 }
 
