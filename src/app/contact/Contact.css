@@ -67,6 +67,10 @@
   margin-bottom: 40px;
   margin-top: 20px;
 }
+.contact-info-block .icon svg {
+  font-size: 65px;
+  color: #6c5ebf;
+}
 
 .contact-info-block h4 {
   position: relative;
@@ -91,7 +95,7 @@
 }
 
 .contact-info-block ul li a:hover {
-  color: #26a88e;
+  color: #ffb400;
 }
 
 .contact-info-block .inner-box:before {
@@ -101,7 +105,7 @@
   top: 0;
   width: 1px;
   height: 270px;
-  background-color: #d8eeea;
+  background-color: #ffb400;
 }
 
 .contact-info-block:last-child .inner-box:before {
@@ -157,4 +161,9 @@
   position: relative;
   margin-bottom: 30px;
   margin-top: 10px;
+}
+.contact-form-section .image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
 }

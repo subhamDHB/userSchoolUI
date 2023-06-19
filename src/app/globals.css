@@ -43,6 +43,7 @@ img {
   margin-bottom: 25px;
   font-weight: 500;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .page-title h1:before {
@@ -52,9 +53,10 @@ img {
   width: 76px;
   bottom: 0;
   left: 0;
-  /* background-image: url(../images/shape/shape-1.png); */
   left: 50%;
   transform: translateX(-50%);
+  border: dotted;
+  color: #6c5ebf;
 }
 
 .page-title .bread-crumb {
@@ -70,29 +72,73 @@ img {
   font-weight: 500;
   padding-right: 35px;
 }
+.page-title .bread-crumb li svg {
+  margin: 0px 15px;
+  color: #fff;
+}
 
 .page-title .bread-crumb li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
 
-.page-title .bread-crumb li:before {
+.page-title .bread-crumb li a {
+  color: #fff;
+}
+
+.btn-style-one {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  padding: 16px 30px;
+  padding-right: 55px;
+  font-weight: 600;
+  border-radius: 3px;
+  overflow: hidden;
+  text-transform: capitalize;
+  vertical-align: middle;
+  border: none;
+  background-color: #6c5ebf;
+}
+
+.btn-style-one:hover {
+  color: #fff;
+}
+
+.btn-style-one:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  content: "";
+  background-color: #000;
+  transition: 0.5s;
+  opacity: 0.1;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+
+.btn-style-one:hover:before {
+  width: 100%;
+  border-radius: 0;
+}
+
+.btn-style-one span {
+  position: relative;
+}
+
+.btn-style-one:after {
   font-family: Flaticon;
   content: "\f115";
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: 26px;
+  top: 16px;
   line-height: 25px;
   font-size: 17px;
   color: #fff;
   transform: rotate(180deg);
   font-weight: 400;
-}
-
-.page-title .bread-crumb li:last-child:before {
-  display: none;
-}
-
-.page-title .bread-crumb li a {
-  color: #fff;
 }

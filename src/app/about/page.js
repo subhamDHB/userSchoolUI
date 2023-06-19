@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaPhoneVolume } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
 import { aboutOne, aboutTwo } from "@/Images";
 export default function About() {
   return (
@@ -22,7 +23,10 @@ export default function About() {
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li>About Us</li>
+                <li>
+                  <BsArrowRight />
+                  About Us
+                </li>
               </ul>
             </div>
           </div>
