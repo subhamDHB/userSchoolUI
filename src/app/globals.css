@@ -9,6 +9,12 @@ body {
 a {
   text-decoration: none !important;
 }
+ul,
+li {
+  list-style: none;
+  padding: 0px !important;
+  margin: 0px !important;
+}
 img {
   display: inline-block;
   max-width: 100%;
@@ -20,4 +26,73 @@ img {
   font-weight: 400;
   color: #555555;
   margin: 0px 0px 15px;
+}
+/* Page Title */
+
+.page-title {
+  position: relative;
+  padding: 115px 0;
+  text-align: center;
+  background-size: cover;
+}
+
+.page-title h1 {
+  font-size: 66px;
+  color: #fff;
+  line-height: 70px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.page-title h1:before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 76px;
+  bottom: 0;
+  left: 0;
+  /* background-image: url(../images/shape/shape-1.png); */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-title .bread-crumb {
+  position: relative;
+}
+
+.page-title .bread-crumb li {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 35px;
+}
+
+.page-title .bread-crumb li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.page-title .bread-crumb li:before {
+  font-family: Flaticon;
+  content: "\f115";
+  position: absolute;
+  right: 0;
+  top: 2px;
+  line-height: 25px;
+  font-size: 17px;
+  color: #fff;
+  transform: rotate(180deg);
+  font-weight: 400;
+}
+
+.page-title .bread-crumb li:last-child:before {
+  display: none;
+}
+
+.page-title .bread-crumb li a {
+  color: #fff;
 }
