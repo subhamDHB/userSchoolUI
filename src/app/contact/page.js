@@ -1,8 +1,9 @@
 import ContactCss from "./../contact/Contact.css";
 import { MdLocationPin } from "react-icons/md";
-import { BsFillEnvelopeCheckFill } from "react-icons/bs";
+import { BsFillEnvelopeCheckFill, BsArrowRight } from "react-icons/bs";
 import { FaPhoneVolume } from "react-icons/fa";
 import Link from "next/link";
+// import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -24,7 +25,10 @@ export default function Contact() {
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li>Get In Touch</li>
+                <li>
+                  <BsArrowRight />
+                  Get In Touch
+                </li>
               </ul>
             </div>
           </div>
@@ -33,7 +37,7 @@ export default function Contact() {
       <section className="contact-section">
         <div className="container">
           <div className="row">
-            <div className="top-content m-0 d-flex justify-content-between align-items-center">
+            <div className="top-content mb-4 d-flex justify-content-between align-items-center">
               <div className="sec-title">
                 <div className="sub-title">instructors help you succeed </div>
                 <h2>
@@ -49,7 +53,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="tab-area">
+          <div className="tab-area mt-4">
             <div className="row">
               <div className="col-lg-4 contact-info-block">
                 <div className="inner-box">
@@ -58,8 +62,8 @@ export default function Contact() {
                   </div>
                   <h4>Office Address</h4>
                   <div className="text">
-                    72 MainSail Drive, St. 12/B <br /> Calibry, Florida 25502 -
-                    USA
+                    V3HP+55F, Kandi-Katwa Rd,
+                    <br /> Bharatpur, West Bengal 742301
                   </div>
                 </div>
               </div>
@@ -71,10 +75,10 @@ export default function Contact() {
                   <h4>Phone Us</h4>
                   <ul>
                     <li>
-                      Hotline: <a href="tel:080060020">0800 60020</a>
+                      Hotline: <a href="tel:080060020">0000 0000</a>
                     </li>
                     <li>
-                      Mob: <a href="tel:+1(246)3330791">+1 (246) 333 0791</a>
+                      Mob: <a href="tel:+1(246)3330791">+91 0000 00000</a>
                     </li>
                   </ul>
                 </div>
@@ -87,13 +91,11 @@ export default function Contact() {
                   <h4>Send Message</h4>
                   <ul>
                     <li>
-                      <a href="mailto:learning@drivega.net">
-                        learning@drivega.net
-                      </a>
+                      <a href="mailto:learning@drivega.net">lorem@gmail.net</a>
                     </li>
                     <li>
                       <a href="mailto:support@thedomain.com">
-                        support@thedomain.com
+                        support@gmail.com
                       </a>
                     </li>
                   </ul>
@@ -108,29 +110,27 @@ export default function Contact() {
           <div className="row">
             <div className="col-lg-6">
               <div className="image">
-                <img src="assets/images/resource/image-23.jpg" alt="" />
+                <img
+                  src="https://scontent.fccu25-1.fna.fbcdn.net/v/t1.6435-9/68657550_881820308859505_8611115721436430336_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Ja2qtuEodssAX_jV7QF&_nc_ht=scontent.fccu25-1.fna&oh=00_AfDIHJyA2bLGdOi7TJz7JIRZw_m5EZx-t2cmB5FU7Mkh7g&oe=64B3E189"
+                  alt=""
+                />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="sec-title mb-30">
-                <div className="sub-title">countless benefits of drivega</div>
-                <h2>
+                <div className="sub-title">countless benefits of lorem</div>
+                <h2 className="mb-4">
                   Any Questions? Fill-In <br /> The Form & Send Today!
                 </h2>
               </div>
               <div className="contact-form">
-                <form
-                  method="post"
-                  action="inc/sendemail.php"
-                  id="contact-form"
-                >
+                <form>
                   <div className="row">
                     <div className="form-group col-md-12">
                       <input
                         type="text"
-                        name="name"
-                        value=""
-                        placeholder="Your Name"
+                        name="fullName"
+                        placeholder="Your Full Name"
                         required
                       />
                     </div>
@@ -138,8 +138,15 @@ export default function Contact() {
                       <input
                         type="email"
                         name="email"
-                        value=""
                         placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                    <div className="form-group col-md-12">
+                      <input
+                        type="phone"
+                        name="phoneNumber"
+                        placeholder="Your Phone Number"
                         required
                       />
                     </div>
@@ -147,23 +154,15 @@ export default function Contact() {
                       <input
                         type="text"
                         name="subject"
-                        value=""
                         placeholder="Subject"
                         required
                       />
                     </div>
                     <div className="form-group col-md-12">
-                      <textarea
-                        name="form_message"
-                        placeholder="Massage"
-                      ></textarea>
+                      <textarea name="message" placeholder="Massage"></textarea>
                     </div>
                     <div className="form-group col-md-12">
-                      <button
-                        className="theme-btn btn-style-one"
-                        type="submit"
-                        data-loading-text="Please wait..."
-                      >
+                      <button className="theme-btn btn-style-one" type="submit">
                         <span>Send Message</span>
                       </button>
                     </div>

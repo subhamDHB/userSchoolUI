@@ -32,7 +32,7 @@ const Header = () => {
                   >
                     <MdLocationPin />
                     <span className="d-none d-md-inline-block">
-                      Lorem ipsum dolar
+                      V3HP+55F, Kandi-Katwa Rd, Bharatpur
                     </span>
                   </Link>
                   <Link href="#" className="d-flex align-items-center mr-auto">
@@ -113,23 +113,23 @@ const Header = () => {
                           </li>
                         </ul>
                       </li> */}
-                      <li>
-                        <Link href="/career" className="nav-link">
+                      <li className={path == "/gallery" ? "active" : ""}>
+                        <Link href="/gallery" className="nav-link">
                           Gallery
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/career" className="nav-link">
+                      <li className={path == "/notice" ? "active" : ""}>
+                        <Link href="/notice" className="nav-link">
                           Notice Board
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/career" className="nav-link">
+                      <li className={path == "/recruitment" ? "active" : ""}>
+                        <Link href="/recruitment" className="nav-link">
                           Recruitment
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/career" className="nav-link">
+                      <li className={path == "/admission" ? "active" : ""}>
+                        <Link href="/admission" className="nav-link">
                           Admission
                         </Link>
                       </li>
