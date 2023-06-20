@@ -1,0 +1,30 @@
+.career-bg {
+  padding: 120px 0px;
+}
+.career-bg .form-inner {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 51px 60px 60px 60px;
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+}
+.career-bg .form-inner .form-control {
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #9a9b9c;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-inner .header-button a {
+  padding: 15px 34px;
+  font-size: 17px;
+}
+.career-bg .form-inner .form-control:focus {
+  outline: none !important;
+  border-color: #6c5ebf;
+  box-shadow: none !important;
+}

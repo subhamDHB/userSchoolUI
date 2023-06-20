@@ -114,8 +114,12 @@ export const Home = ({ gallery }) => {
       <div className="quote-sec">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4"></div>
-            <div className="col-lg-8">
+            <div className="col-lg-4 align-self-center">
+              <div className="Principal-img">
+                <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" />
+              </div>
+            </div>
+            <div className="col-lg-8 align-self-center">
               <aside className="fancy-quote">
                 <h2>From The Desk Of Principal</h2>
                 <blockquote>

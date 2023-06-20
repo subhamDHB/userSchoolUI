@@ -1,5 +1,74 @@
 /*--------notice start-------*/
 
+.ribbon {
+  background: #6c5ebf;
+  color: #fff;
+  padding: 18px;
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  /*border-radius: 3px 3px 0 0;*/
+  position: relative;
+}
+.ribbon:before,
+.ribbon:after {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  top: 100%;
+}
+.ribbon.red-gradient {
+  width: 550px;
+  font-weight: 600;
+  margin: 0px auto 70px;
+  background: linear-gradient(to bottom, #6c5ebfd4 0%, #6c5ebf 100%, #000 100%);
+}
+.ribbon.red-gradient:before {
+  border-top: 20px solid #ffb400;
+  border-left: 20px solid transparent;
+  left: 0;
+}
+.ribbon.red-gradient:after {
+  border-top: 20px solid #ffb400;
+  border-right: 20px solid transparent;
+  left: calc(100% - 20px);
+}
+.notice-main {
+  position: relative;
+  width: 100%;
+  /* background-color: #fff;
+  padding: 51px 60px 60px 60px;
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); */
+}
+.notice-list ul li {
+  background: #6c5ebf14;
+  padding: 20px 15px !important;
+  border-radius: 7px;
+  margin-bottom: 20px !important;
+  box-shadow: 0px 3px 9px #000;
+}
+.notice-list ul li svg {
+  color: #6c5ebf;
+  margin-right: 10px;
+}
+.notice-list ul li a {
+  color: #6c5ebf;
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 7px;
+}
+.notice-dec {
+  padding-left: 25px;
+  margin-top: 10px;
+}
+.notice-dec p {
+  margin: 0px;
+}
 .notice-bg {
   padding: 120px 0px 110px;
 }

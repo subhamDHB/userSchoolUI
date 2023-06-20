@@ -37,7 +37,7 @@ const Footer = () => {
                   <div className="text">
                     Integer lobortis sem consequat imperd In nulla viverra ut
                     lorem ut dapibus con etur diam. Nun biendum diet condime sed
-                    ipsum duis temor lacinia.<Link href="/">Read more</Link>
+                    ipsum duis temor lacinia.<Link href="/"> Read more</Link>
                   </div>
                   <ul className="social-links">
                     <li>
@@ -169,10 +169,13 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="container">
             <div className="wrapper-box">
-              <div className="copyright">
-                <div className="text text-center">
-                  &copy; 2023 YEASITECH. All rights reserved.
-                </div>
+              <div className="text text-left">
+                &copy; 2023 Bharatpur St. Mary (Eng.) School (H.S), All rights
+                reserved.
+              </div>
+              <div className="text text-right">
+                Design and Developed by
+                <Link href="https://yeasitech.com/"> YEASITECH</Link>
               </div>
             </div>
           </div>

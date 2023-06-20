@@ -52,7 +52,7 @@
   bottom: 0;
   left: 0;
   border: dotted;
-  color: #6c5ebf;
+  color: #ffb400;
 }
 .sec-title.text-center .sub-title:before {
   left: 50%;
@@ -121,6 +121,20 @@
 /* about sec css end */
 
 /* quote sec css start */
+.Principal-img {
+  width: 300px;
+  height: 300px;
+  background: #ffb400;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 9px 6px #000;
+}
+.Principal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .quote-sec {
   padding: 80px 0px 80px;
   /* background-color: #000; */
