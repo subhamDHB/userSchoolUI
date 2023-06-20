@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import RecruitmentCss from "./../recruitment/Recruitment.css";
 export default function Recruitment() {
   return (
     <>
@@ -30,7 +31,7 @@ export default function Recruitment() {
         </div>
       </section>
       <div className="career-bg">
-        <div className="container mt-5">
+        <div className="container">
           <div className="row">
             <div className="school-main-title">
               <div className="school-heading-subheading center-align text-center">

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import { BiBullseye } from "react-icons/bi";
 import NoticeCss from "./../notice/Notice.css";
 export default function Notice() {
   const [isRunning, setIsRunning] = useState(true);
@@ -45,6 +46,53 @@ export default function Notice() {
       <section className="notice-bg">
         <div className="container">
           <div className="row">
+            <div className="col-12">
+              <h2 class="ribbon red-gradient">All News and Notice</h2>
+            </div>
+            <div className="col-12">
+              <div className="notice-main">
+                <div className="notice-list">
+                  <ul>
+                    <li>
+                      <div className="notice-title d-flex align-items-center">
+                        <BiBullseye />
+                        <Link href="">Notice number 1</Link>
+                        <img
+                          src="https://www.eiti.org.in/assets/froantend/images/new.gif"
+                          alt=""
+                        />
+                      </div>
+                      <div className="notice-dec">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Laudantium quo quas cum alias vel. Quod, beatae
+                          debitis aliquam consequuntur optio obcaecati sit ullam
+                          corrupti dolorem quisquam ad cupiditate sapiente
+                          tempora.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="notice-title d-flex align-items-center">
+                        <BiBullseye />
+                        <Link href="">Notice number 2</Link>
+                      </div>
+                      <div className="notice-dec">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Laudantium quo quas cum alias vel. Quod, beatae
+                          debitis aliquam consequuntur optio obcaecati sit ullam
+                          corrupti dolorem quisquam ad cupiditate sapiente
+                          tempora.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="row">
             <div className="col-lg-6">
               <div className="notice">
                 <div className="notice_title">
@@ -98,7 +146,7 @@ export default function Notice() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

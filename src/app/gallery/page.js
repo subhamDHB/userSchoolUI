@@ -79,7 +79,7 @@ export default function Gallery() {
           </div>
         </div>
       </section>
-      <div className="gallery-sec">
+      <div className="gallery-sec" style={{ backgroundColor: "#6c5ebf1c" }}>
         <div className="container">
           <div className="row">
             <div className="col-12">

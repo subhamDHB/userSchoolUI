@@ -44,7 +44,7 @@
   left: 0;
   background-repeat: no-repeat;
   border: dotted;
-  color: #6c5ebf;
+  color: #ffb400;
 }
 
 .about-widget .logo {
@@ -62,6 +62,9 @@
   color: rgb(255 255 255 / 0.6);
   margin-bottom: 30px;
   font-weight: 400;
+}
+.about-widget .text a {
+  color: #fff;
 }
 
 .about-widget .social-links {
@@ -261,7 +264,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.footer-bottom .wrapper-box .text a {
+  color: #ffb400;
+  font-weight: bold;
 }
 
 .footer-bottom {
@@ -269,15 +276,10 @@
   padding: 10px 0;
 }
 
-.footer-bottom .copyright {
-  position: relative;
-  color: #fff;
-}
-
 .footer-bottom .text {
   position: relative;
   margin-bottom: 0;
-  color: #fff;
+  color: #ccc;
 }
 
 .footer-bottom .footer-menu li {
