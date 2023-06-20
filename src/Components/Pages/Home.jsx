@@ -9,7 +9,6 @@ import { NoImage, aboutOne, aboutTwo } from "@/Images";
 export const Home = ({ gallery }) => {
   const [imageToShow, setImageToShow] = useState("");
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
-
   let ImageDisplayBanner =
     gallery.data.length &&
     gallery?.data?.map((ele, index) => (
@@ -23,6 +22,16 @@ export const Home = ({ gallery }) => {
     ));
 
   let galleryRenderImages = useMemo(() => {
+    if (!ImageDisplayBanner)
+      return (
+        <div className="col-lg-4 col-md=6 col-sm-12">
+          <div className="gallery-main">
+            <div className="gallery-img">
+              <Image src={NoImage} alt="noimage" />
+            </div>
+          </div>
+        </div>
+      );
     if (ImageDisplayBanner.length > 6) {
       return ImageDisplayBanner.splice(0, 6);
     }
