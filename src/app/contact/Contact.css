@@ -124,7 +124,14 @@
   background-color: #fff;
   height: 58px;
   padding: 0 25px;
-  border: 1px solid #eee;
+  border: 1px solid #d3d3d3;
+}
+
+.contact-form .form-group textarea:focus,
+.contact-form .form-group input:focus {
+  outline: none !important;
+  border-color: #6c5ebf;
+  box-shadow: none !important;
 }
 
 .contact-form .form-group textarea {

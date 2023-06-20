@@ -2,14 +2,14 @@
 
 .main-footer {
   position: relative;
-  padding-top: 120px;
+  padding-top: 80px;
   background-color: #232828;
   background-size: cover;
 }
 
 .main-footer .widgets-section {
   position: relative;
-  padding-bottom: 30px;
+  padding: 0px 74px 30px;
 }
 
 .main-footer .widget {
@@ -52,6 +52,11 @@
   margin-bottom: 30px;
 }
 
+.about-widget .logo h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
 .about-widget .text {
   position: relative;
   color: rgb(255 255 255 / 0.6);
@@ -261,7 +266,7 @@
 
 .footer-bottom {
   border-top: 1px solid #373d3d;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .footer-bottom .copyright {
@@ -292,25 +297,4 @@
 .footer-bottom .footer-menu li a {
   color: #fff;
   transition: 0.5s;
-}
-
-@media only screen and (min-width: 992px) {
-  .main-footer .about-widget {
-    margin-right: -30px;
-  }
-
-  .main-footer .newsletter-widget {
-    margin-left: 30px;
-    margin-right: -50px;
-    z-index: 9;
-  }
-
-  .main-footer .contact-widget {
-    margin-left: 30px;
-  }
-  .main-footer .links-widget {
-    position: relative;
-    margin-left: 85px;
-    margin-right: -30px;
-  }
 }
