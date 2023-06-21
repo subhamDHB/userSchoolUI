@@ -4,6 +4,7 @@ import Link from "next/link";
 import HeaderCss from "./../Header/Header.css";
 import { BsFacebook, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { MdLocationPin, MdLocalPhone } from "react-icons/md";
+import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 const Header = () => {
@@ -25,7 +26,7 @@ const Header = () => {
           <div className="container-fluid py-2">
             <div className="menu-area">
               <div className="row align-items-center">
-                <div className="col-6 top-left-bar">
+                <div className="col-9 top-left-bar">
                   <div className="d-flex mr-auto">
                     <Link
                       href="#"
@@ -47,7 +48,7 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-6 text-right">
+                <div className="col-3 text-right">
                   <div className="mr-auto">
                     <Link href="#" className="p-2 pl-0">
                       <BsFacebook />
@@ -88,7 +89,9 @@ const Header = () => {
                           href="#"
                           className="site-menu-toggle js-menu-toggle text-white"
                         >
-                          <span className="icon-menu h3">menu</span>
+                          <span className="icon-menu h3">
+                            <FaBars />
+                          </span>
                         </Link>
                       </div>
                       <ul className="site-menu main-menu js-clone-nav d-none d-lg-block">

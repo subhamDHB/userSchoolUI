@@ -46,6 +46,10 @@
   display: inline-block;
   /* font-weight: 500; */
 }
+.site-navigation span.icon-menu svg {
+  color: #6c5ebf;
+  font-size: 30px;
+}
 .top-left-bar a {
   text-decoration: none;
   margin-right: 20px;
