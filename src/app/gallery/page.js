@@ -15,7 +15,7 @@ export default function Gallery() {
     "https://scontent.fccu25-1.fna.fbcdn.net/v/t1.6435-9/67916042_881820365526166_734796035930456064_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=D-JGc91HlzcAX_UV6aI&_nc_ht=scontent.fccu25-1.fna&oh=00_AfAW_opGg9HHxrA63EUnkkEXrpa52Jg3Q2iV9yJwLdKB2Q&oe=64B3D2E6",
   ];
   const imageCards = getGallery.map((image, i) => (
-    <div className="col-lg-4 col-md=6 col-sm-12" key={i}>
+    <div className="col-lg-4 col-md-6 col-sm-12" key={i}>
       <div className="gallery-main">
         <div className="gallery-img">
           <img onClick={() => showImage(image)} src={image} alt="" />

@@ -24,7 +24,7 @@ export const Home = ({ gallery }) => {
   let galleryRenderImages = useMemo(() => {
     if (!ImageDisplayBanner)
       return (
-        <div className="col-lg-4 col-md=6 col-sm-12">
+        <div className="col-lg-4 col-md-6 col-sm-12">
           <div className="gallery-main">
             <div className="gallery-img">
               <Image src={NoImage} alt="noimage" />

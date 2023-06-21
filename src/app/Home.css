@@ -11,8 +11,9 @@
   position: relative;
 }
 .about-section .image-one img {
-  width: 580px !important;
+  width: 580px;
   height: 510px;
+  object-fit: cover;
   box-shadow: 0 10px 15px -2px #0000009e;
 }
 .about-section .image-two {

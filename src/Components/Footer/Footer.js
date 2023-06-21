@@ -151,7 +151,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="column col-lg-4 col-md-12">
+              <div className="column col-lg-4 col-md-6">
                 <div>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3295115011747!2d88.08285087624324!3d23.877931478583687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f99b8935eb0199%3A0x4a5c1af790c00202!2sBharatpur%20St.%20Mary%20(Eng.)%20School%20(HS)!5e0!3m2!1sen!2sin!4v1687181726293!5m2!1sen!2sin"
